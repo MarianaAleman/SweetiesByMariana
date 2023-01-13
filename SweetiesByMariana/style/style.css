@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+  /*--------------------------------------------- Menu -------------------------------*/
+.menu{
+    background-color: white;
+    color: #C4802A;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.logo_img{
+    height: 100%;
+}
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+    
+}
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+  
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.menu_item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100% );
+}
+
+.menu_nesting{
+   
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: white;
+}
+
+.menu_link{
+    color: #C4802A;
+    text-decoration: none;
+    padding: 0 50px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menu_link:hover{
+    background-color: #C4802A;
+    color: white;
+}
+
+.menu_link--inside{
+    padding: 30px 30px 30px 20px;
+}
+
+
+/*-------------------------BODY---------------------*/
+
+.div_principal{
+    background-color:white;
+    height: 1380px;
+    width: 75%;
+    margin: auto;
+}
+
+.img_principal{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*-------------about--------------*/
+.mariana{
+    height: 350px;
+    padding-top: 50px;
+    float: left;
+    padding-left: 100px;
+}
+.about{
+
+    height: 450px; 
+}
+h1{
+    color: #C4802A;
+    font-size: 35px;
+    padding-top: 100px;
+    padding-left: 510px;
+    font-weight: 300;
+}
+.p_about{   
+    color: gray;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 510px;
+    padding-right: 100px;
+    font-weight: 200;
+}
+
+/*------------------------INFOCHART MAIN-----------------------------*/
+.info_main{
+    background-color: white;
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+.img_principal2{
+
+    width: 100%;
+    height: 450px;
+}
+
+.info_cuadro_main{
+    width: 300px;
+    height: 300px;
+    margin: 70px 100px 70px 200px;
+    background-color: White;
+    position: absolute;
+}
+.text_info{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    padding-bottom: 5px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 300;
+    font-size: 15px;
+}
+.text_info_sub{
+    display: flex;
+    padding: 12px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 200;
+    font-size: 12px; 
+    justify-content: center;
+
+}
+.location_icon{
+    height: 15px;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 180px;
+    margin: auto;
+    border: 2px black;
+    background-color: beige;
+}
+.text_location{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 12px;
+}
+/*-------------------------------------FOOTER------------------------------*/
+.footer{
+    height: 200px;
+    width: 100%;
+
+}
+.box_footer{
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 90%;
+    width: 20%;
+    float: left;
+}
+
+h2{
+    font-family:'Poppins', sans-serif ;
+    font-weight: 400;
+    font-size: 20px; 
+    justify-content: left;
+    color: #C4802A;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+}
+.links_footer{
+    display: flex;
+    padding: 12px 20px 0px 50px;
+    width: 100%;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 300;
+    font-size: 15px; 
+    justify-content: left; 
+    text-decoration: none;
+    color: black;
+}
+.p_footer{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 300;
+    font-size: 12px; 
+    justify-content: left; 
+    text-decoration: none;
+    color: black;
+}
+.redesicon1{
+    padding-left: 50px;
+
+}
+
+
+/*----------------------------FLAVORS-------------------------*/
+.div_principal_flavor{
+    background-color:white;
+    height: 800px;
+    width: 70%;
+    margin: auto;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background-color: #C4802A;
+}
+.banner_img{
+    width: 100%;
+}
+.banner_title{
+    padding-top: 20px;
+    padding-left: 35%;
+    height: 150px;
+}
+.flavors_img{
+    height: 550px;
+    padding-top: 20px;
+    float: left;
+    padding-left: 100px;
+}
+.flavor{
+    color: #C4802A;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 510px;
+    padding-right: 100px;
+    font-weight: 500;
+}
+.filling{
+    color: gray;
+    font-size: 15px;   
+    padding-left: 510px;
+    padding-right: 100px;
+    font-weight: 200
+}
+/*----------------------------HOW TO-------------------------*/
+.div_principal_howto{
+    background-color:white;
+    height: 1200px;
+    width: 70%;
+    margin: auto;
+}
+.t_howto{
+    color: #C4802A;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 500; 
+
+}
+.p_howto{
+    color: gray;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-weight: 300;  
+}
+  
+
+/*------------------------------SIZES------------*/
+.div_principal_sizes{
+    background-color:white;
+    height: 1300px;
+    width: 70%;
+    margin: auto;
+}
+.size_img{
+    height: 150px;
+    padding-left: 300px;
+    float: left;
+}
+#sub_sizes{
+    color: gray;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 270px;
+    padding-right: 200px;
+    font-weight: 200; 
+   
+}
+#sub_sizes2{
+    color: gray;
+    font-size: 15px;
+    padding-left: 270px;
+    padding-right: 200px;
+    font-weight: 200; 
+    padding-bottom: 25px;   
+}
+.box_size{
+    height: 200px;
+    width: 1000px;
+}
+.t_sizes{
+    color: #C4802A;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 470px;
+    padding-bottom: 10px;
+    font-weight: 400;   
+}
+.p_sizes{
+    color: gray;
+    font-size: 15px;
+    padding-left: 470px;
+    font-weight: 300;  
+}
+
+
+/*------------------------------ORDER------------*/
+.div_principal_order{
+    background-color:white;
+    height: 1750px;
+    width: 70%;
+    margin: auto;
+}
+.form_div{
+
+    height: 1500px;
+    width: 75%;
+    margin: auto;
+    padding: 50px;
+    background-color: beige;
+}
+
+/*------------------------------CUSTOMER DETAILS------------*/
+.customer_div{
+    height: 200px;
+    width: 90%;
+    margin: auto;
+}
+
+input:not([type="radio"]) {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+  }
+
+
+ /*------------------------------PRODUCT DETAILS------------*/ 
+
+.product_div{
+    height: 130px;
+    width: 90%;
+    margin: auto; 
+}
+ 
+  select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+
+  }
+
+
+
+  .occasion_option{
+    padding: 10px;
+    width: 250px;
+    display: inline-block;
+}
+
+.title_occation{
+    width: 700px;
+    padding-bottom: 25px;
+}
+  .form_detail{
+    width: auto;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 25px;
+  }
+
+  .extras_div{
+    height: 200px;
+    width: auto;
+  }
+#comments{
+    height: 70px;
+}
+.comments_div{
+    padding-top: 30px;
+    
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color:#C4802A;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+
+ /*------------------------------LOG IN------------*/ 
+  .div_principal_login{
+    height: 600px;
+  }
+  .login_div{
+    height: 380px;
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    background-color: beige;
+  }
+
+  .login_details_div{
+    width: 70%;
+    margin: auto;
+
+  }
+
+   /*------------------------------SING UP------------*/ 
+   .div_principal_signin{
+    height: 900px;
+  }
+  .signin_div{
+    height: 700px;
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    background-color: beige;
+  }
+
+  .text_signin{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+   /*------------------------------WELCOME --------------------------*/ 
+  
+
+/*---------------------------DETAILS----------------------------*/
+
+
+
